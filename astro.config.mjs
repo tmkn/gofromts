@@ -37,7 +37,7 @@ export default defineConfig({
                 }
             ],
             editLink: {
-                baseUrl: "https://github.com/tmkn/gofromts/edit/main/"
+                baseUrl: "https://github.com/tmkn/gofromts/edit/master/"
             }
         })
     ]
