@@ -28,6 +28,23 @@ export default defineConfig({
                     ]
                 },
                 {
+                    label: "Data Types",
+                    items: [
+                        { slug: "types/overview" },
+                        { slug: "types/null_undefined" },
+                        { slug: "types/any" },
+                        { slug: "types/boolean" },
+                        { slug: "types/number" },
+                        { slug: "types/string" },
+                        { slug: "types/array" },
+                        { slug: "types/object" },
+                        { slug: "types/map" },
+                        { slug: "types/set" },
+                        { slug: "types/class" },
+                        { slug: "types/interfaces" }
+                    ]
+                },
+                {
                     label: "Functions",
                     items: [
                         { slug: "function/functions" },
