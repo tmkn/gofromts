@@ -38,7 +38,17 @@ export default defineConfig({
             ],
             editLink: {
                 baseUrl: "https://github.com/tmkn/gofromts/edit/master/"
-            }
+            },
+            head: [
+                {
+                    tag: "script",
+                    attrs: {
+                        src: "/js/script.js",
+                        "data-domain": "gofromts.tmkn.dev",
+                        defer: true
+                    }
+                }
+            ]
         })
     ]
 });
