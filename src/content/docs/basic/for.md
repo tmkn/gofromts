@@ -34,7 +34,7 @@ However unlike JavaScript/TypeScript, parts of the `for` loop can be omitted.
 
 ## Different ways to use `for` loops
 
-The possibility to omitt parts of the `for` loop allows you to create all sorts of loops like `while` loops and inifinite loops.
+The possibility to omit parts of the `for` loop allows you to create all sorts of loops like `while` loops and inifinite loops.
 
 This flexibility is one of the reasons why `for` loops are the **only** loop construct in Go.
 
