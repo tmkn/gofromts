@@ -15,7 +15,7 @@ todo timeline chart languages/multicore
 
 As you can see, multi core architecture appeared around 2005, however, most of the popular programming languages were invented before that. While they all have support for concurrency (executing multiple tasks at the same time), they were not designed with that in mind.
 
-Go on the other hand was designed with this concurrency and shift in CPU architecture in mind.
+Go, on the other hand was designed with this concurrency and shift in CPU architecture in mind.
 
 ## Built for concurrency
 
