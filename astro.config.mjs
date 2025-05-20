@@ -2,11 +2,15 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 
+const OG_IMAGE_URL = "https://gofromts.tmkn.dev/og.png";
+
 // https://astro.build/config
 export default defineConfig({
     integrations: [
         starlight({
             title: "Go from TS",
+            // fallback when description is not set via frontmatter
+            description: "Use your TypeScript knowledge to learn Go",
             social: [
                 { icon: "github", label: "GitHub", href: "https://github.com/tmkn/gofromts" },
                 { icon: "x.com", label: "@tmkn", href: "https://x.com/tmkndev" }
@@ -63,6 +67,36 @@ export default defineConfig({
                         src: "/js/script.js",
                         "data-domain": "gofromts.tmkn.dev",
                         defer: true
+                    }
+                },
+                // OG image
+                {
+                    tag: "meta",
+                    attrs: {
+                        property: "og:image",
+                        content: OG_IMAGE_URL
+                    }
+                },
+                {
+                    tag: "meta",
+                    attrs: {
+                        property: "og:image:width",
+                        content: "1200"
+                    }
+                },
+                {
+                    tag: "meta",
+                    attrs: {
+                        property: "og:image:height",
+                        content: "630"
+                    }
+                },
+                // OG image x.com
+                {
+                    tag: "meta",
+                    attrs: {
+                        property: "twitter:image",
+                        content: OG_IMAGE_URL
                     }
                 }
             ]
