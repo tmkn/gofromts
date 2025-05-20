@@ -6,6 +6,7 @@ const OG_IMAGE_URL = "https://gofromts.tmkn.dev/og.png";
 
 // https://astro.build/config
 export default defineConfig({
+    site: "https://gofromts.tmkn.dev",
     integrations: [
         starlight({
             title: "Go from TS",
