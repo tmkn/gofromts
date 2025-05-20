@@ -15,6 +15,7 @@ export default defineConfig({
                 { icon: "x.com", label: "@tmkn", href: "https://x.com/tmkndev" }
             ],
             routeMiddleware: ["./src/ogData.ts"],
+            customCss: ["./src/styles/custom.css"],
             sidebar: [
                 {
                     label: "Start",

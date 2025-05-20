@@ -1,6 +1,8 @@
 ---
 title: Go from TypeScript
 description: Use your TypeScript knowledge to learn Go
+banner:
+    content: 🚧 The site is under active development as such some content may be incomplete or missing. 🚧
 template: splash
 hero:
     tagline: Use your TypeScript knowledge to learn Go
@@ -12,6 +14,29 @@ hero:
           icon: right-arrow
 ---
 
-:::note
-The site is under active development as such some content may be incomplete or missing.
-:::
+import { Card, CardGrid } from "@astrojs/starlight/components";
+import { Tabs, TabItem } from "@astrojs/starlight/components";
+import { Code } from "@astrojs/starlight/components";
+
+import tsExample from "../../index/example.ts?raw";
+import goExample from "../../index/example.go?raw";
+
+<h2>Know TypeScript? You're Halfway to Go! 👇</h2>
+<br/>
+<CardGrid>
+    <Card title="">
+        <Tabs>
+            <TabItem label="calculate_price.ts" icon="seti:typescript">
+                <Code code={tsExample} lang="ts" frame="none" wrap={true} />
+            </TabItem>
+        </Tabs>
+    </Card>
+    <Card title="">
+        <Tabs>
+            <TabItem label="calculate_price.go" icon="seti:go">
+                <Code code={goExample} lang="go" frame="none" wrap={true} />
+            </TabItem>
+        </Tabs>
+    </Card>
+
+</CardGrid>
