@@ -3,18 +3,25 @@ title: Variable Declarations
 description: How to declare variables in Go.
 ---
 
-To declare a variable in Go, you use the `var` keyword followed by the variable name and type. The type is optional if you are initializing the variable at the same time.
+To declare a variable in Go, you use the `var` keyword followed by the variable name and type:
 
-Unlike in JavaScript, `var` creates a block scoped variable, like `let` would do in JavaScript. There is no way to create a lexically scoped variable in Go.
-
-```go title="variables.go"
-var x int = 10 // Declare and initialize an int variable
-
-var y = 20   // Declare and initialize an int variable (inferred)
-
-// Declare a string variable without initialization, will be set to the zero value
-var z string
+```go title="variable1.go"
+var x int
 ```
+
+The type is optional if you are initializing the variable and the compiler can infer the type:
+
+```go title="variable2.go"
+var x = 10
+```
+
+However, you can still be explicit:
+
+```go title="variable3.go"
+var x int = 10
+```
+
+Unlike JavaScript, `var` creates a block scoped variable in Go, similar to `let` in JavaScript. There is no `var` like JavaScript equivalent in Go (no way to create function scoped variables), all variables in Go are block scoped.
 
 ## A note on uninitialized variables
 
