@@ -56,6 +56,14 @@ export default defineConfig({
                         { slug: "function/arguments" },
                         { slug: "function/returns" }
                     ]
+                },
+                {
+                    label: "Modules & Dependencies",
+                    items: [
+                        { slug: "modules/introduction" },
+                        { slug: "modules/modules" },
+                        { slug: "modules/packages" }
+                    ]
                 }
             ],
             editLink: {

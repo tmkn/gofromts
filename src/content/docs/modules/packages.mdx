@@ -1,0 +1,50 @@
+---
+title: Packages
+description: What are packages in Go and how to use them.
+---
+
+In Go, packages are the fundamental tool for organizing your source code, and compared to JavaScript, you'll notice a far more structured approach defined by a handful of conventions.
+
+This design philosophy is key to creating a clean and maintainable codebase. It's built upon the following core principles:
+
+- **Package declaration**: Every Go file must start with a package declaration.
+- **No `export` keyword**: Visibility is determined by the case of the first letter of the identifier.
+- **Splitting code**: A package can consist of multiple files.
+- **Package naming**: The package name is usually the same as the directory it is in.
+- **No relative imports**: Go does not allow relative imports, only absolute imports.
+- **No cyclic imports**: Go does not allow cyclic imports.
+
+## Package Declaration
+
+Every Go file must start with a package declaration. It tells Go which **package** the file belongs to.
+
+```go title="calculator/operations.go" "package calculator"
+package calculator
+
+// ...
+```
+
+It's a convention in Go to name the package the same as the directory it in (but more on that later). The `operations.go` file is in the `calculator` directory, so its package name is `calculator`.
+
+## No `export` keyword
+
+Unlike JavaScript/TypeScript, Go does not use keywords like `export` to manage visibility. Instead, it is based on the case of the first letter:
+
+- **Starting with Uppercase**: Identifier (variable, function, type, etc.) is exported and accessible by other packages.
+- **Starting with Lowercase**: Identifier is private (accessible only by their own package)
+
+## Splitting Code
+
+todo
+
+## Package Naming
+
+todo
+
+## No relative Imports
+
+todo
+
+## No Cyclic Imports
+
+todo
